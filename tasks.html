@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - All Tasks</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">Taskify</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="today.html">Today</a></li>
+            <li><a href="overdue.html">Overdue</a></li>
+            <li><a href="tasks.html" class="active">All Tasks</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>All Tasks</h1>
+        </div>
+
+        
+        <div class="controls-bar">
+            <input type="text" class="search-input" placeholder="Search tasks...">
+            <select class="sort-select">
+                <option value="">Sort By</option>
+                <option value="date">Due Date</option>
+                <option value="priority">Priority</option>
+                <option value="status">Status</option>
+            </select>
+        </div>
+
+        <div class="tasks-section">
+            <h2>Complete Task List</h2>
+
+            <div class="task-item">
+                <div class="task-info">
+                    <input type="checkbox">
+                    <span>Review Landing Page Design</span>
+                </div>
+                <span class="badge today">Today</span>
+            </div>
+
+            <div class="task-item">
+                <div class="task-info">
+                    <input type="checkbox">
+                    <span>Submit Weekly Project Report</span>
+                </div>
+                <span class="badge overdue">Overdue</span>
+            </div>
+
+            <div class="task-item">
+                <div class="task-info">
+                    <input type="checkbox" checked>
+                    <span>Read a chapter from Clean Code</span>
+                </div>
+                <span class="badge done">Completed</span>
+            </div>
+
+            <div class="task-item">
+                <div class="task-info">
+                    <input type="checkbox">
+                    <span>Update npm packages in Vue project</span>
+                </div>
+                <span class="badge pending">Pending</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
