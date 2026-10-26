@@ -10,4 +10,4 @@ A responsive web-based task management application designed to help users organi
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript
+
